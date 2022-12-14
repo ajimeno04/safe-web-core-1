@@ -11,8 +11,9 @@ import SafeTokenWidget, { getSafeTokenAddress } from '@/components/common/SafeTo
 import NotificationCenter from '@/components/notification-center/NotificationCenter'
 import { AppRoutes } from '@/config/routes'
 import useChainId from '@/hooks/useChainId'
-import SafeLogo from '@/public/images/logo.svg'
+import SafeLogo from '@/public/images/astar_logo.png'
 import Link from 'next/link'
+import Img from 'next/image'
 import useSafeAddress from '@/hooks/useSafeAddress'
 
 type HeaderProps = {
@@ -39,7 +40,7 @@ const Header = ({ onMenuToggle }: HeaderProps): ReactElement => {
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
           <a>
-            <SafeLogo alt="Safe logo" />
+            <Img alt="Astar Safe" height={36} width={112} src={SafeLogo} id="safe-logo" />
           </a>
         </Link>
       </div>
