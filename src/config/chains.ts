@@ -132,6 +132,7 @@ const chains: Record<string, string> = {
   class: '555',
   tao: '558',
   'metis-stardust': '588',
+  astr: '592',
   maca: '595',
   'mesh-chain-testnet': '600',
   'pixie-chain-testnet': '666',
