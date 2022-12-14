@@ -6,7 +6,7 @@ import { useAppDispatch } from '@/store'
 import { openCookieBanner } from '@/store/popupSlice'
 import { AppRoutes } from '@/config/routes'
 import packageJson from '../../../../package.json'
-import AppstoreButton from '../AppStoreButton'
+// import AppstoreButton from '../AppStoreButton'
 
 const footerPages = [AppRoutes.welcome, AppRoutes.settings.index]
 
@@ -30,27 +30,27 @@ const Footer = (): ReactElement | null => {
           <Typography variant="caption">&copy;2022 Safe Ecosystem Foundation</Typography>
         </li>
         <li>
-          <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/terms">
+          <Link rel="noopener noreferrer" target="_blank" href="https://staging-safe.astar.network/terms">
             Terms
           </Link>
         </li>
         <li>
-          <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/privacy">
+          <Link rel="noopener noreferrer" target="_blank" href="https://staging-safe.astar.network/privacy-policy">
             Privacy
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/licenses">
             Licenses
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/imprint">
-            Imprint
+          <Link rel="noopener noreferrer" target="_blank" href="https://portal.astar.network/">
+            Astar Portal
           </Link>
         </li>
         <li>
-          <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/cookie">
+          <Link rel="noopener noreferrer" target="_blank" href="https://staging-safe.astar.network/cookie-policy">
             Cookie Policy
           </Link>
           &nbsp;&mdash;&nbsp;
@@ -67,9 +67,9 @@ const Footer = (): ReactElement | null => {
             v{packageJson.version}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <AppstoreButton placement="footer" />
-        </li>
+        </li> */}
       </ul>
     </footer>
   )

@@ -5,19 +5,19 @@ import { useState, type MouseEvent, type ReactElement } from 'react'
 
 import KeyholeIcon from '@/components/common/icons/KeyholeIcon'
 import WalletDetails from '@/components/common/ConnectWallet/WalletDetails'
-import PairingDetails from '@/components/common/PairingDetails'
+// import PairingDetails from '@/components/common/PairingDetails'
 
 import css from '@/components/common/ConnectWallet/styles.module.css'
 import { useCurrentChain } from '@/hooks/useChains'
-import { isPairingSupported } from '@/services/pairing/utils'
+// import { isPairingSupported } from '@/services/pairing/utils'
 
 const ConnectionCenter = (): ReactElement => {
-  const chain = useCurrentChain()
+  // const chain = useCurrentChain()
 
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null)
   const open = !!anchorEl
 
-  const isSupported = isPairingSupported(chain?.disabledWallets)
+  // const isSupported = isPairingSupported(chain?.disabledWallets)
 
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget)
@@ -62,13 +62,13 @@ const ConnectionCenter = (): ReactElement => {
         <Paper className={css.popoverContainer}>
           <WalletDetails onConnect={handleClose} />
 
-          {isSupported && (
+          {/* {isSupported && (
             <Box className={css.pairingDetails}>
               <Divider flexItem />
 
               <PairingDetails vertical />
             </Box>
-          )}
+          )} */}
         </Paper>
       </Popover>
     </>
