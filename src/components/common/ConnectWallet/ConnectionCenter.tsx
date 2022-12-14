@@ -1,4 +1,4 @@
-import { Popover, ButtonBase, Typography, Paper, Divider, Box } from '@mui/material'
+import { Popover, ButtonBase, Typography, Paper /*, Divider, Box */ } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import { useState, type MouseEvent, type ReactElement } from 'react'
@@ -8,7 +8,7 @@ import WalletDetails from '@/components/common/ConnectWallet/WalletDetails'
 // import PairingDetails from '@/components/common/PairingDetails'
 
 import css from '@/components/common/ConnectWallet/styles.module.css'
-import { useCurrentChain } from '@/hooks/useChains'
+// import { useCurrentChain } from '@/hooks/useChains'
 // import { isPairingSupported } from '@/services/pairing/utils'
 
 const ConnectionCenter = (): ReactElement => {

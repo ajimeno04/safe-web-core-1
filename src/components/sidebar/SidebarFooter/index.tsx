@@ -8,7 +8,7 @@ import {
   // SidebarListItemText,
 } from '@/components/sidebar/SidebarList'
 import { /*BEAMER_SELECTOR, */ loadBeamer } from '@/services/beamer'
-import {  /*useAppDispatch ,*/ useAppSelector } from '@/store'
+import { /*useAppDispatch ,*/ useAppSelector } from '@/store'
 import { selectCookies, CookieType } from '@/store/cookiesSlice'
 // import { openCookieBanner } from '@/store/popupSlice'
 // import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
