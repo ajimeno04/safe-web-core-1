@@ -28,7 +28,7 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <Typography variant="caption">&copy;2022 Safe Ecosystem Foundation</Typography>
+          <Typography variant="caption">&copy;2022 Astar Safe</Typography>
         </li>
         <li>
           <ExternalLink suppressIcon href="https://staging-safe.astar.network/terms">
@@ -47,7 +47,7 @@ const Footer = (): ReactElement | null => {
         </li> */}
         <li>
           <ExternalLink suppressIcon href="https://portal.astar.network/">
-          Astar Portal
+            Astar Portal
           </ExternalLink>
         </li>
         <li>
