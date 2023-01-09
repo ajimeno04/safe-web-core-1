@@ -67,6 +67,7 @@ const chains: Record<string, string> = {
   spoa: '77',
   primuschain: '78',
   genechain: '80',
+  sby: '81',
   meter: '82',
   metertest: '83',
   gttest: '85',
