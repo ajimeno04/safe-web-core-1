@@ -28,30 +28,30 @@ const Footer = (): ReactElement | null => {
     <footer className={css.container}>
       <ul>
         <li>
-          <Typography variant="caption">&copy;2022 Astar Safe</Typography>
+          <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Astar Safe</Typography>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://staging-safe.astar.network/terms">
+          <ExternalLink noIcon href="https://staging-safe.astar.network/terms">
             Terms
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://staging-safe.astar.network/privacy-policy">
+          <ExternalLink noIcon href="https://staging-safe.astar.network/privacy-policy">
             Privacy
           </ExternalLink>
         </li>
-        {/* <li>
-          <Link rel="noopener noreferrer" target="_blank" href="https://gnosis-safe.io/licenses">
+        {/*<li>
+          <ExternalLink noIcon href="https://safe.global/licenses">
             Licenses
           </Link>
         </li> */}
         <li>
-          <ExternalLink suppressIcon href="https://portal.astar.network/">
+          <ExternalLink noIcon href="https://portal.astar.network/">
             Astar Portal
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink suppressIcon href="https://staging-safe.astar.network/cookie-policy">
+          <ExternalLink noIcon href="https://staging-safe.astar.network/cookie-policy">
             Cookie Policy
           </ExternalLink>
           &nbsp;&mdash;&nbsp;
@@ -60,7 +60,7 @@ const Footer = (): ReactElement | null => {
           </Link>
         </li>
         <li>
-          <ExternalLink suppressIcon href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`}>
+          <ExternalLink noIcon href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`}>
             v{packageJson.version}
           </ExternalLink>
         </li>
