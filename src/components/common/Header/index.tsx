@@ -18,7 +18,7 @@ import Img from 'next/image'
 import useSafeAddress from '@/hooks/useSafeAddress'
 
 type HeaderProps = {
-  onMenuToggle: Dispatch<SetStateAction<boolean>>
+  onMenuToggle?: Dispatch<SetStateAction<boolean>>
 }
 
 const Header = ({ onMenuToggle }: HeaderProps): ReactElement => {
@@ -31,7 +31,11 @@ const Header = ({ onMenuToggle }: HeaderProps): ReactElement => {
   const logoHref = router.pathname === AppRoutes.home ? AppRoutes.welcome : AppRoutes.index
 
   const handleMenuToggle = () => {
-    onMenuToggle((isOpen) => !isOpen)
+    if (onMenuToggle) {
+      onMenuToggle((isOpen) => !isOpen)
+    } else {
+      router.push(logoHref)
+    }
   }
 
   return (
