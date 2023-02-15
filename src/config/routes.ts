@@ -1,6 +1,9 @@
 export const AppRoutes = {
   '404': '/404',
   welcome: '/welcome',
+  terms: '/terms',
+  privacy: '/privacy-policy',
+  cookie: '/cookie-policy',
   index: '/',
   import: '/import',
   environmentVariables: '/environment-variables',

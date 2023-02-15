@@ -31,12 +31,22 @@ const Footer = (): ReactElement | null => {
           <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Astar Safe</Typography>
         </li>
         <li>
-          <ExternalLink noIcon href="https://staging-safe.astar.network/terms">
+          <ExternalLink noIcon href="https://astar.network">
+            Website
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink noIcon href="https://portal.astar.network">
+            Astar Portal
+          </ExternalLink>
+        </li>
+        <li>
+          <ExternalLink noIcon href={AppRoutes.terms}>
             Terms
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink noIcon href="https://staging-safe.astar.network/privacy-policy">
+          <ExternalLink noIcon href={AppRoutes.privacy}>
             Privacy
           </ExternalLink>
         </li>
@@ -46,12 +56,7 @@ const Footer = (): ReactElement | null => {
           </Link>
         </li> */}
         <li>
-          <ExternalLink noIcon href="https://portal.astar.network/">
-            Astar Portal
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink noIcon href="https://staging-safe.astar.network/cookie-policy">
+          <ExternalLink noIcon href={AppRoutes.cookie}>
             Cookie Policy
           </ExternalLink>
           &nbsp;&mdash;&nbsp;
