@@ -1,5 +1,6 @@
-import type { ReactElement } from 'react'
-import { useEffect } from 'react'
+import { useEffect, type ReactElement } from 'react'
+import Link from 'next/link'
+import MUILink from '@mui/material/Link'
 import { Button, Checkbox, FormControlLabel, Typography, Paper, SvgIcon } from '@mui/material'
 import WarningIcon from '@/public/images/notifications/warning.svg'
 import { useForm } from 'react-hook-form'
@@ -9,6 +10,7 @@ import { selectCookies, CookieType, saveCookieConsent } from '@/store/cookiesSli
 import { selectCookieBanner, openCookieBanner, closeCookieBanner } from '@/store/popupSlice'
 
 import css from './styles.module.css'
+import { AppRoutes } from '@/config/routes'
 
 const COOKIE_WARNING: Record<CookieType, string> = {
   [CookieType.NECESSARY]: '',
@@ -52,9 +54,13 @@ const CookieBannerPopup = ({ warningKey }: { warningKey?: CookieType }): ReactEl
       )}
 
       <Typography align="center">
-        We use cookies to provide you with the best experience and to help improve our website and application. By
-        clicking &quot;Accept all&quot;, you agree to the storing of cookies on your device to enhance site navigation,
-        analyze site usage and provide customer support.
+        We use cookies to provide you with the best experience and to help improve our website and application. Please
+        read our{' '}
+        <Link href={AppRoutes.cookie} passHref>
+          <MUILink>Cookie Policy</MUILink>
+        </Link>{' '}
+        for more information. By clicking &quot;Accept all&quot;, you agree to the storing of cookies on your device to
+        enhance site navigation, analyze site usage and provide customer support.
       </Typography>
 
       <form className={css.grid}>
