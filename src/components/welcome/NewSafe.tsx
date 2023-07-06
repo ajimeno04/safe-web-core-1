@@ -73,7 +73,7 @@ const NewSafe = () => {
             color="static.main"
             mb={1}
           >
-            Welcome to {'Safe{Wallet}'}
+            Welcome to {'Astar Safe'}
           </Typography>
 
           <Typography mb={5} color="static.main">
