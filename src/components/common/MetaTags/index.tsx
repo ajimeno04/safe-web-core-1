@@ -2,7 +2,7 @@ import { IS_PRODUCTION } from '@/config/constants'
 import { ContentSecurityPolicy, StrictTransportSecurity } from '@/config/securityHeaders'
 import { lightPalette, darkPalette } from '@safe-global/safe-react-components'
 
-const descriptionText = 'Astar Safe is the most trusted platform to manage digital assets on Astar and Shiden'
+const descriptionText = 'Astar Safe is the most trusted platform to manage digital assets on Astar Network'
 const titleText = 'Astar Safe'
 
 const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
