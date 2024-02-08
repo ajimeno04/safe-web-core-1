@@ -31,7 +31,7 @@ const MenuWithTooltip = forwardRef<HTMLUListElement>(function MenuWithTooltip(pr
   )
 })
 
-const testNets = ['gor', 'base-gor', 'sep']
+const testNets = ['gor', 'base-gor', 'sep', 'sby', 'azktn']
 const isTestnet = (shortName: string) => {
   return testNets.includes(shortName)
 }
