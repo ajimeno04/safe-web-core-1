@@ -1,54 +1,29 @@
 import * as constants from '../../support/constants'
 import * as main from '../../e2e/pages/main.page'
 import * as owner from '../pages/owners.pages'
+import * as createwallet from '../pages/create_wallet.pages'
+import * as createTx from '../pages/create_tx.pages.js'
 
-describe('Remove an owner tests', () => {
+describe('[SMOKE] Remove Owners tests', () => {
   beforeEach(() => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_1)
+    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_11)
     cy.clearLocalStorage()
     main.acceptCookies()
     cy.contains(owner.safeAccountNonceStr, { timeout: 10000 })
   })
 
-  it('Verify that "Remove" icon is visible', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_3)
-    owner.verifyRemoveBtnIsEnabled().should('have.length', 2)
-  })
-
-  it('Verify Tooltip displays correct message for Non-Owner', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_4)
-    owner.waitForConnectionStatus()
-    owner.hoverOverDeleteOwnerBtn(0)
-    owner.verifyTooltipLabel(owner.nonOwnerErrorMsg)
-  })
-
-  it('Verify Tooltip displays correct message for disconnected user', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_3)
-    owner.waitForConnectionStatus()
-    owner.clickOnWalletExpandMoreIcon()
-    owner.clickOnDisconnectBtn()
-    owner.hoverOverDeleteOwnerBtn(0)
-    owner.verifyTooltipLabel(owner.disconnectedUserErrorMsg)
-  })
-
-  it('Verify owner removal form can be opened', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_3)
+  it('[SMOKE] Verify owner deletion transaction has been created', () => {
     owner.waitForConnectionStatus()
     owner.openRemoveOwnerWindow(1)
-  })
-
-  it('Verify threshold input displays the upper limit as the current safe number of owners minus one', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_3)
-    owner.waitForConnectionStatus()
-    owner.openRemoveOwnerWindow(1)
-    owner.verifyThresholdLimit(1, 1)
-  })
-
-  it('Verify owner deletion confirmation is displayed ', () => {
-    cy.visit(constants.setupUrl + constants.SEPOLIA_TEST_SAFE_3)
-    owner.waitForConnectionStatus()
-    owner.openRemoveOwnerWindow(1)
-    owner.clickOnNextBtn()
+    cy.wait(3000)
+    createwallet.clickOnNextBtn()
+    //This method creates the @removedAddress alias
+    owner.getAddressToBeRemoved()
     owner.verifyOwnerDeletionWindowDisplayed()
+    createTx.clickOnSignTransactionBtn()
+    createTx.waitForProposeRequest()
+    createTx.clickViewTransaction()
+    createTx.clickOnTransactionItemByName('removeOwner')
+    createTx.verifyTxDestinationAddress('@removedAddress')
   })
 })
