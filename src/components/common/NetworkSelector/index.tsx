@@ -31,11 +31,6 @@ const MenuWithTooltip = forwardRef<HTMLUListElement>(function MenuWithTooltip(pr
   )
 })
 
-const testNets = ['gor', 'base-gor', 'sep', 'sby', 'azktn']
-const isTestnet = (shortName: string) => {
-  return testNets.includes(shortName)
-}
-
 const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement => {
   const wallet = useWallet()
   const isDarkMode = useDarkMode()
@@ -44,7 +39,7 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
   const chainId = useChainId()
   const router = useRouter()
 
-  const [testNets, prodNets] = useMemo(() => partition(configs, (config) => isTestnet(config.shortName)), [configs])
+  const [testNets, prodNets] = useMemo(() => partition(configs, (config) => config.isTestnet), [configs])
 
   const getNetworkLink = useCallback(
     (shortName: string) => {
@@ -118,10 +113,10 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
           },
           ...(isDarkMode
             ? {
-                '& .Mui-selected, & .Mui-selected:hover': {
-                  backgroundColor: `${theme.palette.secondary.background} !important`,
-                },
-              }
+              '& .Mui-selected, & .Mui-selected:hover': {
+                backgroundColor: `${theme.palette.secondary.background} !important`,
+              },
+            }
             : {}),
         },
       }}
