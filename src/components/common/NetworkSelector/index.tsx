@@ -113,10 +113,10 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
           },
           ...(isDarkMode
             ? {
-              '& .Mui-selected, & .Mui-selected:hover': {
-                backgroundColor: `${theme.palette.secondary.background} !important`,
-              },
-            }
+                '& .Mui-selected, & .Mui-selected:hover': {
+                  backgroundColor: `${theme.palette.secondary.background} !important`,
+                },
+              }
             : {}),
         },
       }}
