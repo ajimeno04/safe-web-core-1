@@ -1,8 +1,8 @@
 diff --git a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-index 3f070a3..4763975 100644
+index 3f070a3..8858422 100644
 --- a/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
 +++ b/node_modules/@safe-global/protocol-kit/dist/src/utils/eip-3770/config.js
-@@ -3,184 +3,185 @@ Object.defineProperty(exports, "__esModule", { value: true });
+@@ -3,184 +3,186 @@ Object.defineProperty(exports, "__esModule", { value: true });
  exports.networks = void 0;
  // https://github.com/ethereum-lists/chains/tree/master/_data/chains
  exports.networks = [
@@ -274,6 +274,7 @@ index 3f070a3..4763975 100644
 +  { chainId: 2222n, shortName: 'kava' },
 +  { chainId: 2358n, shortName: 'kroma-sepolia' },
 +  { chainId: 3737n, shortName: 'csb' },
++  { chainId: 3776n, shortName: 'astar-zkevm' },
 +  { chainId: 4002n, shortName: 'tftm' },
 +  { chainId: 4337n, shortName: 'beam' },
 +  { chainId: 4460n, shortName: 'orderlyl2' },

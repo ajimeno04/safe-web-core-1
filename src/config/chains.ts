@@ -36,6 +36,7 @@ const ChainLogos = {
   [chains.sdn]: '/images/networks/shiden.png',
   [chains.sby]: '/images/networks/sby.png',
   [chains.azktn]: '/images/networks/azktn.png',
+  [chains['astar-zkevm']]: '/images/networks/azktn.png',
 }
 
 export const getChainLogo = (chainId: string) => {
