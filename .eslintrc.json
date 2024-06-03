@@ -11,7 +11,7 @@
     "@next/next/google-font-display": "off",
     "@next/next/google-font-preconnect": "off",
     "@next/next/no-page-custom-font": "off",
-    "unused-imports/no-unused-imports-ts": "error",
+    "unused-imports/no-unused-imports-ts": "off",
     "@typescript-eslint/consistent-type-imports": "error",
     "no-constant-condition": "warn",
     "react-hooks/exhaustive-deps": [
@@ -23,7 +23,7 @@
     "no-only-tests/no-only-tests": "error",
     "object-shorthand": ["error", "properties"],
     "jsx-quotes": ["error", "prefer-double"],
-    "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }]
+    "react/jsx-curly-brace-presence": ["off", { "props": "never", "children": "never" }]
   },
   "ignorePatterns": [
     "node_modules/",
