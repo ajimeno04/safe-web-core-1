@@ -86,6 +86,9 @@ const Footer = (): ReactElement | null => {
               <ExternalLink href="https://www.mantle.xyz/privacy-policy">Privacy Policy</ExternalLink>
             </li>
             <li>
+              <FooterLink href={getHref(AppRoutes.cookie)}>Cookie policy</FooterLink>
+            </li>
+            <li>
               <ExternalLink href={HELP_CENTER_URL}>Help</ExternalLink>
             </li>
           </>
