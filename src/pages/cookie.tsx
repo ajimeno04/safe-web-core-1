@@ -1,4 +1,4 @@
-import { Typography, Link } from '@mui/material'
+import { Typography } from '@mui/material'
 
 const CookiePolicy = () => {
   return (
@@ -28,7 +28,7 @@ const CookiePolicy = () => {
         Cookies are a feature of web browser software that allows web servers to recognize the computer or device used
         to access a website. A cookie is a small text file that a website saves on your computer or mobile device when
         you visit the site. It enables the website to remember your actions and preferences (such as login, language,
-        font size and other display preferences) over a period of time, so you don't have to keep re-entering them
+        font size and other display preferences) over a period of time, so you don’t have to keep re-entering them
         whenever you come back to the site or browse from one page to another.
       </p>
       <Typography variant="h2" mb={2}>
@@ -39,14 +39,14 @@ const CookiePolicy = () => {
       <ol>
         <li>session cookie which is erased when the user closes the browser; or</li>
         <li>
-          persistent cookie which is saved to the hard drive and remains on the user's computer/device for a pre-defined
+          persistent cookie which is saved to the hard drive and remains on the user’s computer/device for a pre-defined
           period of time. As for the domain to which it belongs, cookies are either:{' '}
         </li>
         <li>
           first-party cookies which are set by the web server of the visited page and share the same domain (i.e. set by
           us); or
         </li>
-        <li>third-party cookies stored by a different domain to the visited page's domain.</li>
+        <li>third-party cookies stored by a different domain to the visited page’s domain.</li>
       </ol>
       <Typography variant="h2" mb={2}>
         What cookies do we use and why?
