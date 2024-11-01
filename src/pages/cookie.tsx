@@ -13,8 +13,8 @@ const CookiePolicy = () => {
         pseudonymised form.
       </p>
       <p>
-        This Cookie Policy applies to our website at #domain_name and sets out some further detail on how and why we use
-        these technologies on our website.
+        This Cookie Policy applies to our website at safe.flow.com and sets out some further detail on how and why we
+        use these technologies on our website.
       </p>
       <p>The terms “you” and “your” include our clients, business partners and users of this website.</p>
       <p>
