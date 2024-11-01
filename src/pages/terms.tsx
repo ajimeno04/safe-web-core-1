@@ -323,12 +323,12 @@ const SafeTerms = () => (
     <p>
       All intellectual property rights in Safe Accounts and the Services throughout the world belong to Safe Global(Core
       Contributors GmbH) as owner or their licensors. Nothing in these Terms gives you any rights in respect of any
-      intellectual property owned by us or our licensors and you acknowledge that you do not acquire any ownership
+      intellectual property owned by it or its licensors and you acknowledge that you do not acquire any ownership
       rights by downloading the Safe App or any content from the Safe App.
     </p>
     <p>
-      If you are a consumer we grant you a simple, limited license, but do not sell to you the Services you download
-      solely for your own personal, non-commercial use.
+      If you are a consumer you’re granted a simple, limited license, but it does not sell to you the Services you
+      download solely for your own personal, non-commercial use.
     </p>
 
     <h2>16. What can you expect from the Services and can we make changes to them?</h2>
