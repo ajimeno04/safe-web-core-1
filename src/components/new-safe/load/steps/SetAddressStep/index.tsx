@@ -141,13 +141,13 @@ const SetAddressStep = ({ data, onSubmit, onBack }: StepRenderProps<LoadSafeForm
             name={Field.address}
           />
 
-          <Typography mt={4}>
+          {/* <Typography mt={4}>
             By continuing you consent to the terms of use and{' '}
             <Link href={AppRoutes.privacy} passHref legacyBehavior>
               <MUILink>privacy policy</MUILink>
             </Link>
             .
-          </Typography>
+          </Typography> */}
         </Box>
 
         <Divider />

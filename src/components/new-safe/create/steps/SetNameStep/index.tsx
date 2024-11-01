@@ -110,13 +110,13 @@ function SetNameStep({
               </Box>
             </Grid>
           </Grid>
-          <Typography variant="body2" mt={2}>
+          {/* <Typography variant="body2" mt={2}>
             By continuing, you agree to our terms of use and{' '}
             <Link href={AppRoutes.privacy} passHref legacyBehavior>
               <MUILink>privacy policy</MUILink>
             </Link>
             .
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ '&:not(:empty)': { mt: 3 } }}>
             <NetworkWarning action="create a Safe Account" />

@@ -9,8 +9,6 @@ const NO_SIDEBAR_ROUTES = [
   AppRoutes.index,
   AppRoutes.welcome.index,
   AppRoutes.welcome.accounts,
-  AppRoutes.imprint,
-  AppRoutes.licenses,
 ]
 
 const TOGGLE_SIDEBAR_ROUTES = [AppRoutes.apps.open]
