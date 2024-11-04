@@ -22,7 +22,7 @@ import { AppRoutes } from '@/config/routes'
 const COOKIE_AND_TERM_WARNING: Record<CookieAndTermType, string> = {
   [CookieAndTermType.TERMS]: '',
   [CookieAndTermType.NECESSARY]: '',
-  [CookieAndTermType.UPDATES]: `You attempted to open the "What's new" section but need to accept the "Beamer" cookies first.`,
+  [CookieAndTermType.UPDATES]: '',
   [CookieAndTermType.ANALYTICS]: '',
 }
 
