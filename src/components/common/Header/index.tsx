@@ -114,9 +114,11 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
         </Track>
       </div>
 
-      <div className={classnames(css.element, css.networkSelector)}>
-        <NetworkSelector />
-      </div>
+      {safeAddress && (
+        <div className={classnames(css.element, css.networkSelector)}>
+          <NetworkSelector offerSafeCreation />
+        </div>
+      )}
     </Paper>
   )
 }
