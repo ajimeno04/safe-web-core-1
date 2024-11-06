@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 205">
   <defs>
-    <style>.cls-1{fill:#231f20;}.cls-2{fill:#00ef8b;}.cls-3{fill:#fff;}.cls-4{fill:#16ff99;}</style>
+    <style>.cls-2xsddw{fill:#00ef8b;}.cls-3xsddw{fill:#fff;}.cls-4xsddw{fill:#16ff99;}</style>
   </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1">
-      <circle class="cls-2" cx="50" cy="50" r="50" />
-      <rect class="cls-3" x="57.82" y="42.18" width="14.12" height="14.12" />
-      <path class="cls-3"
+  <g id="Layer_2dsad" data-name="Layer 2dsad">
+    <g id="Layer_1-2dsad" data-name="Layer 1dsad">
+      d="M198.14,40.85l5.85,22,5.85-17.48-1.6-4.51h9l7.71,22,5.71-22H240l-9.83,33.08h-9.44L214.15,55.8,208,73.93h-9.5l-9.77-33.08Z"
+      /> <circle class="cls-2xsddw" cx="50" cy="50" r="50" />
+      <rect class="cls-3xsddw" x="57.82"
+        y="42.18"
+        width="14.12" height="14.12" />
+      <path class="cls-3xsddw"
         d="M43.71,61.59a5.3,5.3,0,1,1-5.3-5.3h5.3V42.18h-5.3A19.41,19.41,0,1,0,57.82,61.59v-5.3H43.71Z" />
-      <path class="cls-3"
+      <path
+        class="cls-3xsddw"
         d="M63.12,35.12H79V21H63.12A19.43,19.43,0,0,0,43.71,40.41v1.77H57.82V40.41A5.3,5.3,0,0,1,63.12,35.12Z" />
-      <polygon class="cls-4"
+      <polygon
+        class="cls-4xsddw"
         points="43.71 56.29 57.82 56.29 57.82 56.29 57.82 42.18 57.82 42.18 43.71 42.18 43.71 56.29" />
     </g>
   </g>
