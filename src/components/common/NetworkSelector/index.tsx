@@ -114,9 +114,9 @@ const NetworkSelector = (props: { onChainSelect?: () => void }): ReactElement =>
     >
       {prodNets.map((chain) => renderMenuItem(chain.chainId, false))}
 
-      <ListSubheader className={css.listSubHeader}>Testnets</ListSubheader>
+      {/* <ListSubheader className={css.listSubHeader}>Testnets</ListSubheader>
 
-      {testNets.map((chain) => renderMenuItem(chain.chainId, false))}
+      {testNets.map((chain) => renderMenuItem(chain.chainId, false))} */}
     </Select>
   ) : (
     <Skeleton width={94} height={31} sx={{ mx: 2 }} />
