@@ -74,8 +74,8 @@ export const getNetworkLink = (router: NextRouter, safeAddress: string, networkS
   const query = (
     isSafeOpened
       ? {
-        safe: `${networkShortName}:${safeAddress}`,
-      }
+          safe: `${networkShortName}:${safeAddress}`,
+        }
       : { chain: networkShortName }
   ) as {
     safe?: string
@@ -386,10 +386,10 @@ const NetworkSelector = ({
           },
           ...(isDarkMode
             ? {
-              '& .Mui-selected, & .Mui-selected:hover': {
-                backgroundColor: `${theme.palette.secondary.background} !important`,
-              },
-            }
+                '& .Mui-selected, & .Mui-selected:hover': {
+                  backgroundColor: `${theme.palette.secondary.background} !important`,
+                },
+              }
             : {}),
         },
       }}
