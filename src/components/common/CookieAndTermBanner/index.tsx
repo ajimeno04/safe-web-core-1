@@ -22,7 +22,7 @@ import ExternalLink from '../ExternalLink'
 const COOKIE_AND_TERM_WARNING: Record<CookieAndTermType, string> = {
   [CookieAndTermType.TERMS]: '',
   [CookieAndTermType.NECESSARY]: '',
-  [CookieAndTermType.UPDATES]: `You attempted to open the "What's new" section but need to accept the "Beamer" cookies first.`,
+  [CookieAndTermType.UPDATES]: ``,
   [CookieAndTermType.ANALYTICS]: '',
 }
 
@@ -87,9 +87,8 @@ export const CookieAndTermBanner = ({
           <Grid item xs>
             <Typography variant="body2" mb={2}>
               By browsing this page, you accept our{' '}
-              <ExternalLink href={AppRoutes.terms}>Terms & Conditions</ExternalLink> (last updated{' '}
-              {metadata.last_update_date}) and the use of necessary cookies. By clicking &quot;Accept all&quot; you
-              additionally agree to the use of cookies as listed below.{' '}
+              <ExternalLink href={AppRoutes.terms}>Terms & Conditions</ExternalLink>
+              {metadata.last_update_date}) and the use of necessary cookies. 
               <ExternalLink href={AppRoutes.cookie}>Cookie policy</ExternalLink>
             </Typography>
 
