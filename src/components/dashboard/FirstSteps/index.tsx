@@ -340,7 +340,7 @@ const FirstSteps = () => {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stopColor="#5FDDFF" />
-                  <stop offset="1" stopColor="#12FF80" />
+                  <stop offset="1" stopColor="#12d0ff" />
                 </linearGradient>
               </defs>
             </svg>
