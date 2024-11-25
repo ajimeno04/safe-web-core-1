@@ -38,6 +38,10 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
+        <li>
+          This is a Safe{'{'}Wallet{'}'} Partner website
+        </li>
+
         {IS_OFFICIAL_HOST || IS_DEV ? (
           <>
             {/* <li>
