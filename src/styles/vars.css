@@ -8,7 +8,7 @@
   --color-primary-main: #121312;
   --color-primary-light: #636669;
   --color-secondary-dark: #3867dd;
-  --color-secondary-main: #12d0ff;
+  --color-secondary-main: #5FDDFF;
   --color-secondary-light: #b0ffc9;
   --color-secondary-background: #effff4;
   --color-border-main: #a1a3a7;
@@ -57,12 +57,12 @@
   --color-text-secondary: #636669;
   --color-text-disabled: #636669;
   --color-primary-dark: #3867dd;
-  --color-primary-main: #12d0ff;
+  --color-primary-main: #5FDDFF;
   --color-primary-light: #a1a3a7;
   --color-secondary-dark: #636669;
   --color-secondary-main: #ffffff;
-  --color-secondary-light: #12d0ff;
-  --color-secondary-background: #2c4352;
+  --color-secondary-light: #5FDDFF;
+  --color-secondary-background: #C0FFFB;
   --color-border-main: #636669;
   --color-border-light: #303033;
   --color-border-background: #121312;
@@ -85,7 +85,7 @@
   --color-background-default: #121312;
   --color-background-main: #121312;
   --color-background-paper: #1c1c1c;
-  --color-background-light: #2c4352;
+  --color-background-light: #C0FFFB;
   --color-backdrop-main: #636669;
   --color-logo-main: #ffffff;
   --color-logo-background: #303033;
@@ -99,12 +99,12 @@
     --color-text-secondary: #636669;
     --color-text-disabled: #636669;
     --color-primary-dark: #3867dd;
-    --color-primary-main: #12d0ff;
+    --color-primary-main: #5FDDFF;
     --color-primary-light: #a1a3a7;
     --color-secondary-dark: #636669;
     --color-secondary-main: #ffffff;
-    --color-secondary-light: #12d0ff;
-    --color-secondary-background: #2c4352;
+    --color-secondary-light: #5FDDFF;
+    --color-secondary-background: #C0FFFB;
     --color-border-main: #636669;
     --color-border-light: #303033;
     --color-border-background: #121312;
@@ -127,7 +127,7 @@
     --color-background-default: #121312;
     --color-background-main: #121312;
     --color-background-paper: #1c1c1c;
-    --color-background-light: #2c4352;
+    --color-background-light: #C0FFFB;
     --color-backdrop-main: #636669;
     --color-logo-main: #ffffff;
     --color-logo-background: #303033;
